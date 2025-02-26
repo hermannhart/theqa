@@ -1,0 +1,39 @@
+
+
+```txt
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+.env/
+*.env
+
+# AWS Braket / Quantum Computing
+braket_logs/
+braket_outputs/
+
+# CUDA Compilation
+*.ptx
+*.cubin
+
+# Secrets & Configs
+config.json
+secrets.json
+*.pem
+
+# Generated Outputs
+*.png
+*.svg
+output/
+logs/
+
+# IDE Specific
+.vscode/
+.idea/
