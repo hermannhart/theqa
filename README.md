@@ -30,7 +30,7 @@ TheQA is a novel quantum-inspired algorithm that utilizes resonance patterns and
 
 ### ***Contributors***
 
-- Matthias - Human resoureces
+- Matthias - Human resources
 - Arti Cyan - Artificial  resources
 
 
