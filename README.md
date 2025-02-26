@@ -18,6 +18,28 @@ TheQA is a novel quantum-inspired algorithm that utilizes resonance patterns and
 - **📊 P-NP Analyzer**: Investigates the separation of P vs. NP using resonance analysis.
 - **🧬 Biomolecule Quantum Simulation**: Uses TheQA with CUDA to analyze biomolecular structures.
 - **📊 the_QA**: the "algorithm"
+
+### **License**
+- This project follows a dual-license model:
+
+- For Personal & Research Use: CC BY-NC 4.0 → Free for non-commercial use only.
+- For Commercial Use: Companies must obtain a commercial license (Elastic License 2.0).
+
+📜 For details, see the LICENSE file.
+
+
+### ***Contributors***
+
+- Matthias - Human resoureces
+- Arti Cyan - Artificial  resources
+
+
+### ***Contact & Support***
+
+- For inquiries regarding commercial licensing or support, please contact:📧 theqa@posteo.com 🌐 www.theqa.space 🚀🚀🚀
+
+- 🚀 Get started with TheQA and explore new frontiers in optimization! 🚀
+
 ---
 
 ## **Installation**
@@ -26,28 +48,6 @@ TheQA is a novel quantum-inspired algorithm that utilizes resonance patterns and
 - `numpy`, `matplotlib`, `scipy`
 - `numba` for CUDA acceleration (optional)
 - `braket` for AWS Quantum Computing (optional)
-
-### **License**
-This project follows a dual-license model:
-
-For Personal & Research Use: CC BY-NC 4.0 → Free for non-commercial use only.
-For Commercial Use: Companies must obtain a commercial license (Elastic License 2.0).
-
-📜 For details, see the LICENSE file.
-
-
-### ***Contributors***
-
-Matthias - Human resoureces
-Arti Cyan - Artificial  resources
-
-
-### ***Contact & Support***
-
-For inquiries regarding commercial licensing or support, please contact:📧 theqa@posteo.com 🌐 www.theqa.space 🚀🚀🚀
-
-🚀 Get started with TheQA and explore new frontiers in optimization! 🚀
-
 
 ### **Setup**
 ```bash
