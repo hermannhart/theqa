@@ -5,6 +5,14 @@
 
 ## **Overview**
 This repository contains research projects utilizing **TheQA**, a quantum-inspired computational framework designed for optimization problems, quantum simulations, and complexity analysis.
+TheQA is a novel quantum-inspired algorithm that utilizes resonance patterns and structural optimization to enhance problem-solving efficiency. It runs on classical hardware (CPUs, GPUs) while achieving optimization performance comparable to quantum algorithms. TheQA has been applied to the Traveling Salesman Problem (TSP) and has demonstrated significant speed improvements over both classical and quantum computing approaches.
+
+## **Features**
+
+🧠 Quantum-Acceptance Principle: Uses resonance patterns for efficient optimization.
+🚀 Runs on Classical Hardware: Works on CPUs, GPUs, and QPUs (e.g., IonQ).
+📊 Comparative Benchmarking: Evaluates performance against classical heuristics and quantum processors.
+🔬 Applicable to Various Optimization Problems: Usable in machine learning, graph theory, and simulations.
 
 ### **Projects Included**
 - **📊 P-NP Analyzer**: Investigates the separation of P vs. NP using resonance analysis.
@@ -24,3 +32,29 @@ This repository contains research projects utilizing **TheQA**, a quantum-inspir
 git clone git clone https://github.com/hermannhart/theqa.git
 cd theqa-research
 pip install -r requirements.txt
+
+### **License**
+
+This project follows a dual-license model:
+
+For Personal & Research Use: CC BY-NC 4.0 → Free for non-commercial use only.
+
+For Commercial Use: Companies must obtain a commercial license (Elastic License 2.0).
+
+📜 For details, see the LICENSE file.
+
+
+### ***Contributors***
+
+Matthias - Human resoureces
+
+Arti Cyan - Artificial  resources
+
+
+### ***Contact & Support***
+
+For inquiries regarding commercial licensing or support, please contact:📧 theqa@posteo.com 🌐 www.theqa.space 🚀🚀🚀
+
+🚀 Get started with TheQA and explore new frontiers in optimization! 🚀
+
+
