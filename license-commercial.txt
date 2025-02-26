@@ -1,0 +1,13 @@
+Elastic License 2.0 (ELv2)
+
+This software is licensed under the Elastic License 2.0, which allows:
+- Free use for internal business operations.
+- Modification and redistribution **only with a valid commercial agreement**.
+
+Restrictions:
+- You may **not** provide the software as a managed service.
+- You may **not** circumvent licensing mechanisms.
+
+For commercial licensing options, please contact: [www.theqa.space]
+
+Full license text: https://www.elastic.co/licensing/elastic-license
