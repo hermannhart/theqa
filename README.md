@@ -27,18 +27,10 @@ TheQA is a novel quantum-inspired algorithm that utilizes resonance patterns and
 - `numba` for CUDA acceleration (optional)
 - `braket` for AWS Quantum Computing (optional)
 
-### **Setup**
-```bash
-git clone git clone https://github.com/hermannhart/theqa.git
-cd theqa-research
-pip install -r requirements.txt
-
 ### **License**
-
 This project follows a dual-license model:
 
 For Personal & Research Use: CC BY-NC 4.0 → Free for non-commercial use only.
-
 For Commercial Use: Companies must obtain a commercial license (Elastic License 2.0).
 
 📜 For details, see the LICENSE file.
@@ -47,7 +39,6 @@ For Commercial Use: Companies must obtain a commercial license (Elastic License 
 ### ***Contributors***
 
 Matthias - Human resoureces
-
 Arti Cyan - Artificial  resources
 
 
@@ -56,5 +47,15 @@ Arti Cyan - Artificial  resources
 For inquiries regarding commercial licensing or support, please contact:📧 theqa@posteo.com 🌐 www.theqa.space 🚀🚀🚀
 
 🚀 Get started with TheQA and explore new frontiers in optimization! 🚀
+
+
+### **Setup**
+```bash
+git clone git clone https://github.com/hermannhart/theqa.git
+cd theqa-research
+pip install -r requirements.txt
+```bash
+
+
 
 
