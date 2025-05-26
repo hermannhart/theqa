@@ -10,9 +10,13 @@ TheQA leverages probability theory—laws of large numbers, central limit theore
 ## **Features**
 
 🧠 TheQA builds on established methods like Monte Carlo, Metropolis algorithms, and random projections, but its innovation lies in:
+
 🚀 Tailored sample metric selection and aggregation.
+
 📊 Creative application to novel mathematical domains (e.g., Collatz, dimensional bridges).
+
 🔬 Empirical validation through bootstrapping and cross-platform reproducibility.
+
 
 
 ### **Projects Included**
