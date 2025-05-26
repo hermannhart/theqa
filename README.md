@@ -20,7 +20,7 @@ TheQA leverages probability theory—laws of large numbers, central limit theore
 
 
 ### **Projects Included**
-- **📊 Foundation
+- **📊 Discovery of Universal Phase Transitions in Discrete Dynamical Systems
 
 ### **License**
 - This project follows a dual-license model:
