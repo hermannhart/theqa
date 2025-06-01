@@ -76,6 +76,15 @@ You can also install all dependencies via `requirements.txt`:
 pip install -r requirements.txt
 ```
 
+### **Notes**
+
+- All scripts are self-contained and runnable from the command line.
+- For large number analyses or extensive visualizations, ensure your system has adequate RAM and CPU.
+- All scripts use only standard Python and open-source scientific packages.
+
+---
+
+**Enjoy exploring stochastic resonance and phase transitions in discrete dynamical systems!**
 
 
 
