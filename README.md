@@ -19,8 +19,10 @@ TheQA leverages probability theory—laws of large numbers, central limit theore
 
 
 
-### **Projects Included**
-- **📊 Foundation
+### **Projects Included** - see Branches!
+- **📊 Foundation - the core concept
+- **📊 Discrete Phase Transitions - showing that the methods and critical phenomena are not unique to Collatz—they are a feature of a broad class of mathematical systems
+  
 
 ### **License**
 - This project follows a dual-license model:
@@ -48,16 +50,31 @@ TheQA leverages probability theory—laws of large numbers, central limit theore
 ## **Installation**
 ### **Requirements**
 - **Python 3.8+**
-- `numpy`, `matplotlib`, `scipy`
-- `numba` for CUDA acceleration (optional)
-- `braket` for AWS Quantum Computing (optional)
+- 🚀 numpy
+- 🚀 matplotlib
+- 🚀 scipy
+- 🚀 pandas
+- 🚀 scikit-learn
+- 🚀 sympy
 
-### **Setup**
+### **Run a script**
+
+For example, to run the first analysis:
 ```bash
-git clone git clone https://github.com/hermannhart/theqa.git
-cd theqa-research
+python 1.py
+```
+or, in the `sequel` branch:
+```bash
+python 7.py
+```
+
+### **(Optional) Requirements file**
+
+You can also install all dependencies via `requirements.txt`:
+
+```bash
 pip install -r requirements.txt
-```bash
+```
 
 
 
