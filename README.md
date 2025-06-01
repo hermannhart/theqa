@@ -10,37 +10,37 @@ After laying the mathematical groundwork for stochastic analysis of the Collatz 
 
 ---
 
-### 7. **Universal Noise: Physics Meets Collatz**
+### 7.py **Universal Noise: Physics Meets Collatz**
 
 We started by systematizing the study of different noise types—thermal, quantum, 1/f, semiconductor, and more. By simulating and visualizing these fundamental noise models, I compared their properties directly with the "noise" observed in Collatz sequences. The outcome? A physics-inspired toolkit for understanding randomness in both natural and mathematical systems.
 
 ---
 
-### 8. **Which Noise Type Resonates Best with Collatz?**
+### 8.py **Which Noise Type Resonates Best with Collatz?**
 
 Next, I asked: Do all types of noise interact with Collatz in the same way? Using a rigorous, quantitative comparison, I tested white, pink, brown, quantum-inspired, random telegraph, and heavy-tailed (Lévy) noise. Each noise model was optimized and ranked by its resonance with Collatz peaks—revealing deep connections between mathematical structure and physical randomness. It turns out, not all noise is created equal!
 
 ---
 
-### 9. **Why Is σ = 0.0001 a Magical Threshold?**
+### 9.py **Why Is σ = 0.0001 a Magical Threshold?**
 
 A surprising empirical finding: there exists a “magic” noise threshold where Collatz sequences exhibit a sharp statistical transition. I set out to investigate why, using precision scans, information theory, and even quantum analogies. The analysis uncovered a phase-like transition reminiscent of those in physics, suggesting that discrete mathematical systems can harbor their own critical phenomena.
 
 ---
 
-### 10. **Beyond the Threshold: Scanning for the True Phase Transition**
+### 10.py **Beyond the Threshold: Scanning for the True Phase Transition**
 
 Zooming out, I rigorously explored higher noise levels (σ ≈ 0.01–1.0), searching for the real “phase transition” point. Using scanning, fits, and theoretical tools, I mapped out the critical regime where Collatz’s peak statistics change qualitatively. The result is a detailed portrait of order-disorder transitions in a purely mathematical setting.
 
 ---
 
-### 11. **Characterizing the Phase Transition: Universality and Scaling**
+### 11.py **Characterizing the Phase Transition: Universality and Scaling**
 
 Taking inspiration from statistical physics, I fully characterized the critical phase transition in Collatz. I analyzed scaling laws, finite-size effects, and even universal critical exponents—echoing the language of phase transitions in nature. The approach is ready for publication, with plots and quantitative results that reveal the deep structure underlying simple rules.
 
 ---
 
-### 12. **Theory, Universality, and New Conjectures**
+### 12.py **Theory, Universality, and New Conjectures**
 
 In the final step, I developed a theoretical model for the critical threshold and tested its universality by applying it to other conjectures: 5n+1, 7n+1, Kaprekar’s routine, Josephus, Fibonacci, and prime gaps. The results show that the methods and critical phenomena are not unique to Collatz—they are a feature of a broad class of mathematical systems.
 
