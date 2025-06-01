@@ -1,39 +1,52 @@
-
-
-```txt
-# Python specific
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 
-# Jupyter Notebook Checkpoints
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Virtual Environments
-venv/
-.env/
-*.env
-
-# AWS Braket / Quantum Computing
-braket_logs/
-braket_outputs/
-
-# CUDA Compilation
-*.ptx
-*.cubin
-
-# Secrets & Configs
-config.json
-secrets.json
-*.pem
-
-# Generated Outputs
-*.png
-*.svg
-output/
-logs/
-
-# IDE Specific
+# VSCode settings
 .vscode/
+
+# macOS
+.DS_Store
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# PyCharm
 .idea/
+
+# Test outputs
+*.log
+*.out
+
+# Data files (optional, if your scripts generate outputs)
+*.csv
+*.tsv
+*.dat
+*.xlsx
+
+# Plots and images (optional, if your scripts save figures)
+*.png
+*.jpg
+*.svg
+*.pdf
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
