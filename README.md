@@ -20,8 +20,9 @@ TheQA leverages probability theory—laws of large numbers, central limit theore
 
 
 ### **Projects Included** - see Branches!
-- **📊 Foundation - the core concept
-- **📊 Discrete Phase Transitions - showing that the methods and critical phenomena are not unique to Collatz—they are a feature of a broad class of mathematical systems
+- **📊 Part I: Foundation - the core concept
+- **📊 Part II: Discrete Phase Transitions - feature of a broad class of mathematical systems
+- **📊 Part III: Theory - the Theory
   
 
 ### **License**
