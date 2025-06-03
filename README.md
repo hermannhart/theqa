@@ -113,6 +113,36 @@ All discrete systems exhibit a phase transition under noise — but **σ<sub>c</
 This framework provides a unified toolset to **detect**, **classify**, and **analyze** complexity emergence in deterministic sequences.
 
 --
+## Rule for the interpretation of OC/σ_c
+
+    The value of OC/σ_c is always defined relative to the selected feature extraction and measurement method.
+
+    It answers the question:
+    “From which noise level σ does the statistic of the selected feature in the selected system differ significantly from the deterministic case according to the selected criterion?”
+```
+Formal:
+σ c
+
+resp.
+O C
+```
+### Practical consequence
+
+    OC is context-dependent! There is not “the” one OC value of a system, but always a whole family of OC values - depending on how you measure.
+    Questions like “What is Collatz's OC?” are incomplete. Only the complete specification of feature/method/threshold makes the value meaningfully comparable.
+    Comparisons between systems are only meaningful if the methodology is identical.
+    Different OC values are not an error, but provide information on how robust/sensitive a system is to noise - in relation to the feature under consideration.
+
+### Example formulation
+```
+    “The OC value is the answer to the question:
+    'At what σ does a phase transition occur for feature X in system Y according to criterion Z?”
+```
+
+### Rule of thumb
+
+“OC is not a natural constant - but a function of the measurement question!”
+
 
 ## **Features**
 
