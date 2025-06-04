@@ -153,7 +153,7 @@ Entropy is a universal measure of unpredictability and complexity. Through all p
 
 ---
 
-## 7. Conclusion: The Triple Rule as a New Paradigm
+## 7. Conclusion: The Triple Rule 
 
 Our research journey demonstrates that the critical noise threshold is **not an inherent property of a system alone**, but emerges from the interaction of the system, feature extraction, and statistical criterion. The “Triple Rule” is thus a scientifically honest, flexible, and powerful framework for entropy and noise analysis in discrete systems.
 
