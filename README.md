@@ -13,9 +13,6 @@ This chapter is about the development of the oc triple rule see readme.md in the
 
 
 ### **Projects Included** - see Branches!
-- **📊 Part I: Foundation - the core concept
-- **📊 Part II: Discrete Phase Transitions - feature of a broad class of mathematical systems
-- **📊 Part III: Theory - the Theory
 - **📊 Part III: Goldbach - the Theory of σ<sub>c</sub>
   
 
