@@ -13,7 +13,7 @@ This chapter is about the development of the oc triple rule see readme.md in the
 
 
 ### **Projects Included** - see Branches!
-- **📊 Part III: Goldbach - the Theory of σ<sub>c</sub>
+- **📊 Part IV: Goldbach - the Theory of σ<sub>c</sub>
   
 
 ### **License**
