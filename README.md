@@ -8,8 +8,8 @@ This repository contains research projects utilizing **TheQA**, a quantum-inspir
 TheQA leverages probability theory—laws of large numbers, central limit theorems, and concentration inequalities—to ensure stable, objective estimates of system structures. By tuning the stochastic "noise" level, TheQA amplifies weak signals via stochastic resonance, maximizing information extraction. Resonances are statistically significant patterns, distinguishable from random noise through robust metrics.
 
 # Stochastic Phase Transitions in Discrete Dynamical Systems
-In this folder you will find the next step of our little math adventure. After we were able to measure oc and calculate σ₍c₎ values for various problems, we ventured into the Goldbach conjecture. It turned out that our methodology could beautifully reveal the hidden structure of Goldbach, but wait, why did we suddenly have different σ₍c₎ values?
-This chapter is about the development of the oc triple rule see readme.md in the main branch.
+In this folder you will find the next step of our little math adventure. After we were able to measure oc and calculate σ₍c₎ values for various problems, we ventured into the Goldbach conjecture (evolution.md). It turned out that our methodology could beautifully reveal the hidden structure of Goldbach (goldbach.MD), but wait, why did we suddenly have different σ₍c₎ values?
+This chapter is about the development of the oc triple rule see oc_triple_phil.MD in the main branch.
 
 
 ### **Projects Included** - see Branches!
