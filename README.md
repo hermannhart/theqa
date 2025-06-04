@@ -184,7 +184,7 @@ We encourage the community to adopt this perspective, always specifying the trip
 - **📊 Part I: Foundation - the core concept
 - **📊 Part II: Discrete Phase Transitions - feature of a broad class of mathematical systems
 - **📊 Part III: Theory - the Theory
-- **📊 Part III: Goldbach - the Theory of σ<sub>c</sub>
+- **📊 Part IV: Goldbach - the Theory of σ<sub>c</sub>
   
 
 ### **License**
