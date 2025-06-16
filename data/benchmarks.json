@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "date": "2024-01-15",
+    "platform": {
+      "python": "3.10.0",
+      "numpy": "1.21.0",
+      "scipy": "1.7.0",
+      "cpu": "Intel Core i7-9700K @ 3.60GHz",
+      "ram": "16GB",
+      "os": "Ubuntu 20.04 LTS"
+    }
+  },
+  "algorithms": {
+    "empirical": {
+      "description": "Standard empirical method with Monte Carlo sampling",
+      "complexity": "O(n × m × k)",
+      "benchmarks": [
+        {
+          "sequence_length": 100,
+          "n_trials": 100,
+          "n_sigmas": 50,
+          "time_seconds": 0.234,
+          "memory_mb": 12.5
+        },
+        {
+          "sequence_length": 1000,
+          "n_trials": 100,
+          "n_sigmas": 50,
+          "time_seconds": 2.156,
+          "memory_mb": 45.3
+        },
+        {
+          "sequence_length": 10000,
+          "n_trials": 100,
+          "n_sigmas": 50,
+          "time_seconds": 21.847,
+          "memory_mb": 156.8
+        }
+      ]
+    },
+    "spectral": {
+      "description": "FFT-based spectral method",
+      "complexity": "O(n log n)",
+      "benchmarks": [
+        {
+          "sequence_length": 100,
+          "time_seconds": 0.0002,
+          "memory_mb": 2.1,
+          "speedup_vs_empirical": 1170
+        },
+        {
+          "sequence_length": 1000,
+          "time_seconds": 0.0012,
+          "memory_mb": 8.4,
+          "speedup_vs_empirical": 1797
+        },
+        {
+          "sequence_length": 10000,
+          "time_seconds": 0.0089,
+          "memory_mb": 34.2,
+          "speedup_vs_empirical": 2454
+        }
+      ]
+    },
+    "gradient": {
+      "description": "Information gradient method with Newton-Raphson",
+      "complexity": "O(n × k), k ≈ 10",
+      "benchmarks": [
+        {
+          "sequence_length": 100,
+          "time_seconds": 0.0015,
+          "memory_mb": 1.8,
+          "speedup_vs_empirical": 156
+        },
+        {
+          "sequence_length": 1000,
+          "time_seconds": 0.0098,
+          "memory_mb": 6.2,
+          "speedup_vs_empirical": 220
+        },
+        {
+          "sequence_length": 10000,
+          "time_seconds": 0.0876,
+          "memory_mb": 28.5,
+          "speedup_vs_empirical": 249
+        }
+      ]
+    },
+    "analytical": {
+      "description": "Closed-form approximation after system detection",
+      "complexity": "O(n) preprocessing, O(1) computation",
+      "benchmarks": [
+        {
+          "sequence_length": 100,
+          "time_seconds": 0.0001,
+          "memory_mb": 0.5,
+          "speedup_vs_empirical": 2340
+        },
+        {
+          "sequence_length": 1000,
+          "time_seconds": 0.0003,
+          "memory_mb": 1.2,
+          "speedup_vs_empirical": 7187
+        },
+        {
+          "sequence_length": 10000,
+          "time_seconds": 0.0012,
+          "memory_mb": 4.8,
+          "speedup_vs_empirical": 18206
+        }
+      ]
+    }
+  },
+  "systems": {
+    "collatz": {
+      "typical_sigma_c": 0.117,
+      "computation_times": {
+        "empirical": 0.234,
+        "spectral": 0.0002,
+        "gradient": 0.0015,
+        "analytical": 0.0001
+      }
+    },
+    "fibonacci": {
+      "typical_sigma_c": 0.001,
+      "computation_times": {
+        "empirical": 0.198,
+        "spectral": 0.0002,
+        "gradient": 0.0012,
+        "analytical": 0.0001
+      }
+    },
+    "logistic": {
+      "typical_sigma_c": 0.210,
+      "computation_times": {
+        "empirical": 0.276,
+        "spectral": 0.0003,
+        "gradient": 0.0018,
+        "analytical": 0.0001
+      }
+    }
+  },
+  "parallel_performance": {
+    "description": "Performance with parallel processing",
+    "n_sequences": 100,
+    "results": [
+      {
+        "n_cores": 1,
+        "time_seconds": 23.45,
+        "sequences_per_second": 4.26
+      },
+      {
+        "n_cores": 2,
+        "time_seconds": 12.18,
+        "sequences_per_second": 8.21
+      },
+      {
+        "n_cores": 4,
+        "time_seconds": 6.34,
+        "sequences_per_second": 15.77
+      },
+      {
+        "n_cores": 8,
+        "time_seconds": 3.45,
+        "sequences_per_second": 28.99
+      }
+    ]
+  },
+  "accuracy": {
+    "description": "Accuracy comparison of methods",
+    "reference_method": "empirical_high_precision",
+    "test_systems": ["collatz", "fibonacci", "logistic"],
+    "results": {
+      "spectral": {
+        "mean_relative_error": 0.048,
+        "max_relative_error": 0.087,
+        "std_relative_error": 0.021
+      },
+      "gradient": {
+        "mean_relative_error": 0.032,
+        "max_relative_error": 0.065,
+        "std_relative_error": 0.018
+      },
+      "analytical": {
+        "mean_relative_error": 0.095,
+        "max_relative_error": 0.142,
+        "std_relative_error": 0.038
+      }
+    }
+  }
+}
