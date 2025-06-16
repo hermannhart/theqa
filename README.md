@@ -1,171 +1,302 @@
-# TheQA Research for Computational Problems
+# TheQA: Critical Noise Thresholds in Discrete Dynamical Systems
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![License: Elastic License 2.0](https://img.shields.io/badge/Commercial%20License-ELv2-orange)](LICENSE-COMMERCIAL.txt)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-## **Overview**
-This repository contains research projects utilizing **TheQA**, a quantum-inspired computational framework designed for optimization problems, quantum simulations, and complexity analysis.
-TheQA leverages probability theory—laws of large numbers, central limit theorems, and concentration inequalities—to ensure stable, objective estimates of system structures. By tuning the stochastic "noise" level, TheQA amplifies weak signals via stochastic resonance, maximizing information extraction. Resonances are statistically significant patterns, distinguishable from random noise through robust metrics.
+A Python package for computing critical noise thresholds (σc) in discrete dynamical systems, based on the Triple Rule framework.
 
-# Stochastic Phase Transitions in Discrete Dynamical Systems
+## Installation
 
-This repository explores the concept of **critical noise thresholds (σ<sub>c</sub>)** in discrete deterministic sequences. It provides code, data, and theoretical background for detecting and analyzing **stochastic phase transitions** under Gaussian noise perturbations.
-
----
-## 🔬 What is σ<sub>c</sub>?
-
-The **critical noise threshold** σ<sub>c</sub> is the minimal standard deviation of Gaussian noise at which a deterministic system, for a given transformation and feature extraction, transitions from deterministic to measurable statistical complexity according to a chosen statistical criterion.
-
-### Mathematical Definition
-
-Let **S** = {s₁, s₂, ..., sₙ} be a deterministic sequence, **T** a transformation (e.g., log, sqrt, identity), and **F<sub>σ</sub>**(S) a feature extractor (e.g., peak count) applied to **T(S)** plus Gaussian noise of std. dev. σ.
-
-The **critical threshold** (for statistical criterion **C** and threshold ε) is:
-
-```math
-σ_c(S, T, F, C, ε) = inf{ σ > 0 : C[F_σ(T(S))] > ε }
+### From PyPI (recommended)
+```bash
+pip install theqa
 ```
 
-Typical choice: C = variance, ε ≈ 0.1.
-
----
-
-# The Evolution of the Critical Noise Threshold: From Single Values to the Triple Rule in Discrete Entropy Analysis
-
-## Abstract
-
-We systematically analyze the emergence and meaning of the critical noise threshold (σ₍c₎, OC) in discrete dynamical systems, with a focus on entropy-based methods. Tracing the development from our initial approaches to the most recent, we show how our understanding evolved from seeking a unique critical value to formulating the “Triple Rule,” which recognizes the context-dependence of σ₍c₎/OC on system, feature extraction, and statistical criterion. We argue that this perspective is both scientifically robust and practically fruitful, and we provide a framework for future entropy-based research in discrete systems.
-
----
-
-## 1. Introduction
-
-The concept of a **critical noise threshold** (σ₍c₎ or OC) has become central in the study of stochastic resonance and phase transitions in discrete mathematical systems. Traditionally, researchers aimed to assign a unique value to σ₍c₎ for a given system, analogous to physical constants like the melting point of a material. However, our research has revealed that this view is incomplete. Here, we document our journey from early single-value approaches to the comprehensive “Triple Rule” perspective, with entropy as a guiding example.
-
----
-
-## 2. Early Approaches: Paper 1 (Foundation)
-
-### 2.1. Motivation & Methodology
-
-In our first analyses (see `foundation/2.py`, `foundation/4.py`), the goal was to **identify a unique σ₍c₎ for systems such as the Collatz sequence**. We used entropy and related information measures:
-- **Transforming sequences** (typically via `log(x+1)`).
-- **Adding Gaussian noise** with varying σ.
-- **Counting features** (e.g., peaks), and
-- **Measuring entropy** and mutual information as functions of σ.
-
-### 2.2. Results
-
-- We observed a sharp increase in entropy or feature variance at a certain σ: **σ₍c₎ ≈ 0.117** for Collatz.
-- We interpreted this as a “phase transition,” similar to those found in physics.
-
-### 2.3. Limitations
-
-- Different features (peaks, crossings, etc.) led to different σ₍c₎ values.
-- Changing the statistical criterion (variance, MI, entropy threshold) shifted σ₍c₎.
-- Fixing the random seed (as in early scripts) could suppress stochastic effects.
-
-**Conclusion:** The “unique value” for σ₍c₎ was sensitive to experimental choices.
-
----
-
-## 3. Intermediate Insights: Paper 2 (Discrete Phase Transitions)
-
-### 3.1. Deepening the Analysis
-
-Moving to the `discrete-phase-transitions` folder (`7.py`, `9.py`, `12.py`), we broadened our investigation:
-- Tested many features and criteria (entropy, MI, minimal distance in log-space).
-- Compared different systems (Collatz, qn+1, Fibonacci, etc.).
-- Systematically varied the parameters for feature extraction and statistics.
-
-### 3.2. Key Findings
-
-- The “critical” σ depended strongly on the **feature** (what is measured) and **threshold** (how significance is defined).
-- For some features, the minimal observable σ₍c₎ was extremely small (e.g., when based on minimal log-distance).
-- **Different systems** showed different σ₍c₎ “fingerprints”—not a single number but a set of values.
-
-### 3.3. Toward a General Principle
-
-We recognized an **analogy to physics**: just as the melting point of a material depends on pressure, σ₍c₎ in discrete systems depends on how and what we measure.
-
----
-
-## 4. Theoretical Synthesis: Paper 3 (Theory & Goldbach)
-
-### 4.1. Analytical Models
-
-In the `theory` and `goldbach` folders (see `b1.py`, `b5.py`, `oc.py`, `oc3.py`), we sought deeper understanding:
-- Developed models relating σ₍c₎ to system properties (e.g., entropy, log-ratio, step size, spectral properties).
-- Explored universal scaling laws (σ₍c₎ ~ log(q)/log(2), dependence on entropy).
-- Performed cross-system analyses and clustering to reveal systematic patterns.
-
-### 4.2. The Final Step: The Triple Rule
-
-In our latest work (`goldbach/oc3.py`), we arrived at a key realization:
-> **There is no absolute σ₍c₎. Instead, σ₍c₎ is always a function of a triple:**
-> - **System (S)**
-> - **Feature extraction (F)**
-> - **Statistical criterion (T)**
-
-**Formally:**  
-```math
-σ_c = σ_c(S, F, T)
+### From source
+```bash
+git clone https://github.com/hermannhart/theqa.git
+cd theqa
+pip install -e .
 ```
 
-- This “Triple Rule” resolves all previous contradictions:
-  - Different papers report different σ₍c₎ values—all are correct in their context.
-  - There is no contradiction if you always specify (S, F, T).
-  - σ₍c₎ becomes a fingerprint of the system for various feature/statistic combinations.
+## Quick Start
 
----
+### Basic Usage
 
-## 5. Entropy as a Case Study
+```python
+from theqa import compute_sigma_c, TripleRule
 
-### 5.1. Why Entropy?
+# Simple usage with automatic detection
+sequence = [1, 2, 4, 8, 16, 32, 64, 128]
+sigma_c = compute_sigma_c(sequence)
+print(f"Critical threshold: {sigma_c:.3f}")
 
-Entropy is a universal measure of unpredictability and complexity. Through all phases of our research, entropy served as both a **feature** (Shannon entropy of feature counts) and as a **statistical criterion** (e.g., transition when entropy sharply increases).
+# Advanced usage with Triple Rule
+from theqa.systems import CollatzSystem
+from theqa.features import PeakCounter
+from theqa.criteria import VarianceCriterion
 
-### 5.2. What We Learned
+# Create system
+system = CollatzSystem(n=27)
 
-- Entropy-based σ₍c₎ is highly sensitive to the choice of feature and threshold.
-- Using entropy as **part of the triple**—not as a “master criterion”—allows for much richer and more reproducible results.
-- Entropy fingerprints can be used for systematic comparison between systems.
+# Define Triple Rule
+tr = TripleRule(
+    system=system,
+    feature=PeakCounter(transform='log'),
+    criterion=VarianceCriterion(threshold=0.1)
+)
 
----
+# Compute critical threshold
+result = tr.compute()
+print(f"σc = {result.sigma_c:.3f}")
+print(f"Confidence interval: [{result.ci_lower:.3f}, {result.ci_upper:.3f}]")
+```
 
-## 6. Theoretical and Practical Implications
+### Available Systems
 
-### 6.1. Scientific Robustness
+```python
+from theqa.systems import (
+    CollatzSystem,      # Collatz conjecture sequences
+    FibonacciSystem,    # Fibonacci sequences
+    LogisticMap,        # Logistic chaos
+    TentMap,            # Tent map
+    JosephusSystem,     # Josephus problem
+    PrimeGapSystem      # Prime gap sequences
+)
 
-- The triple perspective makes σ₍c₎ measurement **immune to “contradictions”** from different experiments.
-- It enables **standardization** and **reproducibility**.
+# Example: Analyze different systems
+for SystemClass in [CollatzSystem, FibonacciSystem, LogisticMap]:
+    system = SystemClass()
+    sigma_c = compute_sigma_c(system.generate())
+    print(f"{SystemClass.__name__}: σc = {sigma_c:.3f}")
+```
 
-### 6.2. Communication and Benchmarking
+### Feature Extraction
 
-- For clarity, we propose always stating the full triple:
-  - E.g.: `σc(Collatz, LogPeaks, Var>0.1) = 0.117`
-- For benchmarks, a **canonical triple** can be agreed upon, but alternative triples should always be documented.
+```python
+from theqa.features import (
+    PeakCounter,        # Count local maxima
+    EntropyCalculator,  # Shannon entropy
+    SpectralAnalyzer,   # Frequency domain features
+    AutoCorrelation,    # Autocorrelation features
+    ZeroCrossings      # Zero crossing rate
+)
 
-### 6.3. System Fingerprints
+# Custom feature extraction
+feature = EntropyCalculator(bins=20)
+transformed_seq = feature.transform(sequence)
+```
 
-- A system’s **σ₍c₎-fingerprint** is the set of values over all relevant triples.
-- This enables meaningful cross-system and cross-feature comparison.
+### Statistical Criteria
 
----
+```python
+from theqa.criteria import (
+    VarianceCriterion,   # Variance-based detection
+    IQRCriterion,        # Interquartile range
+    EntropyCriterion,    # Entropy-based
+    MADCriterion         # Median absolute deviation
+)
 
-## 7. Conclusion: The Triple Rule 
+# Custom criterion
+criterion = IQRCriterion(threshold=0.2)
+```
 
-Our research journey demonstrates that the critical noise threshold is **not an inherent property of a system alone**, but emerges from the interaction of the system, feature extraction, and statistical criterion. The “Triple Rule” is thus a scientifically honest, flexible, and powerful framework for entropy and noise analysis in discrete systems.
+## Advanced Features
 
-We encourage the community to adopt this perspective, always specifying the triple, and to use entropy-based analysis as a rich tool within this broader context.
+### Efficient Algorithms
 
----
+```python
+from theqa.algorithms import (
+    spectral_sigma_c,    # O(n log n) spectral method
+    gradient_sigma_c,    # Information gradient method
+    analytical_sigma_c   # O(1) analytical approximation
+)
 
-## 8. References
+# Compare methods
+sequence = CollatzSystem(n=27).generate()
 
-- [1] See code and results in `foundation/`, `discrete-phase-transitions/`, `theory/`, and `goldbach/` folders of [hermannhart/theqa](https://github.com/hermannhart/theqa).
-- [2] For detailed entropy and stochastic resonance methods, see the scripts `2.py`, `4.py`, `7.py`, `9.py`, `12.py`, `b1.py`, `b5.py`, `oc.py`, `oc3.py`.
-- [3] For further discussions of the triple rule, see the included `OC-Triple-Philosophy.md`.
+# Fast spectral method
+sigma_spectral = spectral_sigma_c(sequence)
+
+# Gradient-based method
+sigma_gradient = gradient_sigma_c(sequence)
+
+# Analytical approximation
+sigma_analytical = analytical_sigma_c(sequence, system_type='collatz_like')
+
+print(f"Spectral: {sigma_spectral:.3f}")
+print(f"Gradient: {sigma_gradient:.3f}")
+print(f"Analytical: {sigma_analytical:.3f}")
+```
+
+### Quantum Extensions
+
+```python
+from theqa.quantum import (
+    QuantumWalk,
+    quantum_sigma_c,
+    classical_to_quantum_bound
+)
+
+# Analyze quantum walk
+qw = QuantumWalk(n_qubits=8)
+sigma_c_quantum = quantum_sigma_c(qw)
+print(f"Quantum σc: {sigma_c_quantum:.3f}")
+
+# Convert classical to quantum bound
+classical_sc = 0.117
+quantum_bound = classical_to_quantum_bound(classical_sc)
+print(f"Classical: {classical_sc:.3f} → Quantum: {quantum_bound:.3f}")
+```
+
+### Optimization Framework
+
+```python
+from theqa.optimize import (
+    optimize_for_sensitivity,
+    optimize_for_robustness,
+    optimize_for_discrimination,
+    pareto_optimal_design
+)
+
+# Find most sensitive (F,C) pair
+best_fc = optimize_for_sensitivity(system=CollatzSystem())
+print(f"Most sensitive: Feature={best_fc.feature}, Criterion={best_fc.criterion}")
+print(f"Achieves σc = {best_fc.sigma_c:.4f}")
+
+# Multi-objective optimization
+pareto_front = pareto_optimal_design(
+    objectives=['sensitivity', 'robustness', 'discrimination'],
+    constraints={'computational_cost': 1000}
+)
+```
+
+### Visualization
+
+```python
+from theqa.visualize import (
+    plot_phase_transition,
+    plot_sigma_landscape,
+    plot_system_fingerprint,
+    plot_optimization_tradeoff
+)
+
+# Visualize phase transition
+fig = plot_phase_transition(sequence, save_path='phase_transition.png')
+
+# Create σc landscape
+systems = [CollatzSystem(), FibonacciSystem(), LogisticMap()]
+fig = plot_sigma_landscape(systems, save_path='landscape.png')
+```
+
+## Complete Example: Research Workflow
+
+```python
+import numpy as np
+from theqa import TripleRule, compute_sigma_c
+from theqa.systems import CollatzSystem
+from theqa.features import PeakCounter, EntropyCalculator
+from theqa.criteria import VarianceCriterion
+from theqa.visualize import plot_phase_transition
+
+# 1. Generate system
+system = CollatzSystem(n=27)
+sequence = system.generate(max_steps=1000)
+
+# 2. Quick analysis
+sigma_c_quick = compute_sigma_c(sequence)
+print(f"Quick estimate: σc = {sigma_c_quick:.3f}")
+
+# 3. Detailed analysis with Triple Rule
+tr = TripleRule(
+    system=system,
+    feature=PeakCounter(transform='log'),
+    criterion=VarianceCriterion(threshold=0.1)
+)
+
+result = tr.compute(
+    n_trials=500,        # More trials for accuracy
+    method='empirical',  # Use empirical method
+    confidence=0.95      # 95% confidence interval
+)
+
+print("\nDetailed Analysis:")
+print(f"σc = {result.sigma_c:.3f} [{result.ci_lower:.3f}, {result.ci_upper:.3f}]")
+print(f"Convergence achieved: {result.converged}")
+print(f"Computation time: {result.time_elapsed:.2f}s")
+
+# 4. Compare different features
+features = {
+    'peaks': PeakCounter(),
+    'entropy': EntropyCalculator(),
+    'spectral': SpectralAnalyzer()
+}
+
+print("\nSystem Fingerprint:")
+for name, feature in features.items():
+    tr.feature = feature
+    sigma_c = tr.compute().sigma_c
+    print(f"  {name}: σc = {sigma_c:.3f}")
+
+# 5. Visualize
+fig = plot_phase_transition(
+    sequence,
+    feature=PeakCounter(),
+    criterion=VarianceCriterion(),
+    save_path='collatz_transition.png'
+)
+```
+
+## API Reference
+
+### Core Functions
+
+- `compute_sigma_c(sequence, **kwargs)`: Compute critical threshold with automatic method selection
+- `TripleRule(system, feature, criterion)`: Main framework for σc computation
+
+### Systems
+- `CollatzSystem(n, q=3)`: Generalized Collatz sequences
+- `FibonacciSystem(n)`: Fibonacci-like sequences
+- `LogisticMap(r, x0, length)`: Discrete logistic map
+- `TentMap(r, x0, length)`: Tent map sequences
+
+### Features
+- `PeakCounter(transform=None)`: Count local maxima
+- `EntropyCalculator(bins=20)`: Shannon entropy
+- `SpectralAnalyzer(n_peaks=1)`: Frequency domain analysis
+- `AutoCorrelation(max_lag=50)`: Autocorrelation features
+
+### Criteria
+- `VarianceCriterion(threshold=0.1)`: Variance-based detection
+- `IQRCriterion(threshold=0.2)`: Interquartile range
+- `EntropyCriterion(threshold=0.1)`: Entropy change detection
+
+### Algorithms
+- `spectral_sigma_c(sequence)`: FFT-based O(n log n) method
+- `gradient_sigma_c(sequence)`: Information gradient method
+- `analytical_sigma_c(sequence, system_type)`: O(1) approximation
+
+## Performance Tips
+
+1. **For real-time applications**: Use `analytical_sigma_c()` with system type hints
+2. **For unknown systems**: Start with `spectral_sigma_c()` for good accuracy/speed tradeoff
+3. **For research**: Use `TripleRule` with `method='empirical'` for highest accuracy
+4. **For large datasets**: Use parallel processing with `parallel_sigma_c()`
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## Support
+
+- Documentation: [https://theqa.readthedocs.io](https://theqa.readthedocs.io)
+- Issues: [GitHub Issues](https://github.com/hermannhart/theqa/issues)
+- Discussions: [GitHub Discussions](https://github.com/hermannhart/theqa/discussions)
+
+## Acknowledgments
+
+Special thanks to the NumPy, SciPy, and matplotlib communities for their excellent tools.
 
 
 ## **Features**
@@ -177,15 +308,7 @@ We encourage the community to adopt this perspective, always specifying the trip
 📊 Creative application to novel mathematical domains (e.g., Collatz, dimensional bridges).
 
 🔬 Empirical validation through bootstrapping and cross-platform reproducibility.
-
-
-
-### **Projects Included** - see Branches!
-- **📊 Part I: Foundation - the core concept
-- **📊 Part II: Discrete Phase Transitions - feature of a broad class of mathematical systems
-- **📊 Part III: Theory - the Theory
-- **📊 Part IV: Goldbach - the Theory of σ<sub>c</sub>
-  
+ 
 
 ### **License**
 - This project follows a dual-license model:
@@ -207,43 +330,6 @@ We encourage the community to adopt this perspective, always specifying the trip
 - For inquiries regarding commercial licensing or support, please contact:📧 theqa@posteo.com 🌐 www.theqa.space 🚀🚀🚀
 
 - 🚀 Get started with TheQA and explore new frontiers in optimization! 🚀
-
----
-
-## **Installation**
-### **Requirements**
-- **Python 3.8+**
-- 🚀 numpy
-- 🚀 matplotlib
-- 🚀 scipy
-- 🚀 pandas
-- 🚀 scikit-learn
-- 🚀 sympy
-
-### **Run a script**
-
-For example, to run the first analysis:
-```bash
-python 1.py
-```
-or, in the `sequel` branch:
-```bash
-python 7.py
-```
-
-### **(Optional) Requirements file**
-
-You can also install all dependencies via `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-### **Notes**
-
-- All scripts are self-contained and runnable from the command line.
-- For large number analyses or extensive visualizations, ensure your system has adequate RAM and CPU.
-- All scripts use only standard Python and open-source scientific packages.
 
 ---
 
