@@ -1,52 +1,54 @@
-# Byte-compiled / optimized / DLL files
+```
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Virtual environment
+# Virtual Environment
 venv/
+ENV/
 env/
-.venv/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# VSCode settings
-.vscode/
-
-# macOS
-.DS_Store
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# PyCharm
+# IDE
 .idea/
+.vscode/
+*.swp
+*.swo
 
-# Test outputs
-*.log
-*.out
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Data files (optional, if your scripts generate outputs)
-*.csv
-*.tsv
-*.dat
-*.xlsx
+# Documentation
+docs/_build/
 
-# Plots and images (optional, if your scripts save figures)
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
 *.png
 *.jpg
-*.svg
 *.pdf
-
-# OS generated files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Python egg files
-*.egg
-*.egg-info/
-dist/
-build/
+results/
+output/
+```
