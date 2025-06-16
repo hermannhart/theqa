@@ -1,0 +1,8 @@
+```
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include theqa/data *.csv *.json
+recursive-include docs *.rst *.py
+recursive-include examples *.py *.ipynb
+```
