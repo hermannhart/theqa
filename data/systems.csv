@@ -1,0 +1,25 @@
+system_name,system_type,parameter,sigma_c,std_dev,class,n_samples,notes
+Collatz_3n+1,collatz,3,0.117,0.002,Medium,1000,Standard Collatz conjecture
+Collatz_5n+1,collatz,5,0.163,0.003,Medium,1000,Generalized Collatz
+Collatz_7n+1,collatz,7,0.163,0.004,Medium,1000,Shows quantization
+Collatz_9n+1,collatz,9,0.187,0.003,Medium,1000,Higher multiplier
+Collatz_11n+1,collatz,11,0.187,0.004,Medium,1000,Quantized value
+Fibonacci,fibonacci,100,0.001,0.0001,Ultra-sensitive,500,Classic Fibonacci
+Lucas,fibonacci_variant,100,0.001,0.0001,Ultra-sensitive,500,Lucas numbers
+Prime_Gaps,prime,100,0.008,0.001,Ultra-sensitive,500,Gaps between primes
+Twin_Prime_Gaps,prime_variant,100,0.009,0.001,Ultra-sensitive,500,Twin prime gaps
+Josephus_41_3,josephus,41,0.023,0.002,Sensitive,500,Classic Josephus problem
+Josephus_100_7,josephus,100,0.045,0.003,Sensitive,500,Larger circle
+Catalan,combinatorial,50,0.034,0.002,Sensitive,500,Catalan numbers
+Partitions,combinatorial,50,0.056,0.004,Sensitive,500,Integer partitions
+Logistic_3.6,logistic,3.6,0.156,0.008,Medium,1000,Edge of chaos
+Logistic_3.9,logistic,3.9,0.210,0.010,Medium,1000,Chaotic regime
+Logistic_4.0,logistic,4.0,0.234,0.012,Medium,1000,Full chaos
+Tent_1.5,tent,1.5,0.180,0.009,Medium,1000,Tent map
+Tent_2.0,tent,2.0,0.345,0.015,Robust,1000,Maximum chaos
+Henon,henon,1.4,0.240,0.011,Medium,1000,Henon attractor
+CA_Rule30,cellular_automaton,30,0.198,0.010,Medium,1000,Wolfram Rule 30
+CA_Rule90,cellular_automaton,90,0.167,0.008,Medium,1000,Sierpinski pattern
+CA_Rule110,cellular_automaton,110,0.223,0.012,Medium,1000,Complex behavior
+Random_Walk,stochastic,1,0.450,0.020,Robust,1000,Pure random walk
+Pseudo_Random,stochastic,42,0.890,0.030,Robust,1000,Linear congruential
