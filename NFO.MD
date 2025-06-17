@@ -92,30 +92,39 @@ touch theqa/algorithms.py
 
 ### 4. Create Additional Required Files
 
-#### LICENSE (MIT License)
+#### LICENSE (Elastic 2.0 License)
 ```
-MIT License
+# License Notice
 
-Copyright (c) 2024 Matthias C. Wurm, Arti Cyan
+This software is licensed under a dual-license model:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. **For Non-Commercial and Personal Use**  
+   - This software is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.  
+   - Home users and researchers may use, modify, and share this software **for non-commercial purposes only**.  
+   - See `LICENSE-CCBYNC.txt` for full details.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. **For Commercial Use**  
+   - Companies, organizations, and any commercial entities must acquire a **commercial license**.  
+   - This commercial license follows the **Elastic License 2.0 (ELv2)** model.  
+   - See `LICENSE-COMMERCIAL.txt` for details on permitted commercial usage and restrictions.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+By using this software, you agree to these terms. If you are a company or organization, please contact **[www.theqa.space]** for licensing inquiries.
+
+---
+
+## Summary of Key Terms
+
+| License Type         | Permitted Uses | Restrictions |
+|----------------------|---------------|-------------|
+| **CC BY-NC 4.0** (for non-commercial users) | Private research, personal projects, open-source contributions | No commercial use |
+| **Elastic License 2.0 (ELv2)** (for companies) | Internal business use, integration into private services | No resale, no redistribution as a SaaS, requires a paid license |
+
+For more details, please refer to the full license files:
+- `LICENSE-CCBYNC.txt` (for non-commercial users)
+- `LICENSE-COMMERCIAL.txt` (for companies)
+
+Copyright (c) 2024 Matthias and Arti Cyan
+
 
 #### MANIFEST.in
 ```
