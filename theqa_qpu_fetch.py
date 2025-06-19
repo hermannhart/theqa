@@ -1,5 +1,6 @@
 """
 Ultimate Quantum Randomness Show: THEQA-Style Multi-Test Demonstrator
+Elastic 2.0 License - theqa@posteo.com
 
 - Fetches true quantum random numbers in batch from IonQ Aria-1 QPU (or any QPU)
 - Applies "Rule of Three": three independent, deep randomness analyses:
