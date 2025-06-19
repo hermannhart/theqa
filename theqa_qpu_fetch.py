@@ -191,7 +191,7 @@ def print_top_candidates(bitstrings, hashes, best_indices, best_zeros, top_n=5):
 
 # -- Main Pipeline ------------------------------------------------------------
 def main():
-    n_samples = 100  # or 5000, as needed
+    n_samples = 5000  # or 5000, as needed
     nbits = 16
     mod = 4
     blocksize = 3
