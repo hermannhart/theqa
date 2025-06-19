@@ -7,7 +7,7 @@
 
 This project demonstrates the world's first practical quantum computing application for seismic crisis prediction, leveraging the revolutionary **Triple Rule Theory** to detect earthquake precursors that are fundamentally invisible to classical computers.
 
-![Quantum Advantage Demo](quantum_xprize_demo.png)
+![Quantum Advantage Demo](quantum_xprize_aws_demo_20250620_002319.png)
 
 ## 🌟 Executive Summary
 
