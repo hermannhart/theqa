@@ -52,7 +52,22 @@ def get_prng_seeds(nbits=16, n_samples=1000):
     seeds = [np.random.randint(0, 2**nbits) for _ in range(n_samples)]
     bitstrings = [bin(s)[2:].zfill(nbits) for s in seeds]
     return seeds, bitstrings
+    
+def qpu_signature_analysis(bitstrings):
+    """
+    Unique QPU fingerprint based on noise characteristics
+    Different QPUs have different σc signatures!
+    """
+    # Ihre σc-Analyse anwenden
+    return qpu_fingerprint
 
+def quantum_certificate_generation(data, qpu_hash):
+    """
+    Combines user data with quantum hash for 
+    unforgeable certificates
+    """
+    return certificate
+    
 # -- Analysis 1: Collatz Orbit Diversity --------------------------------------
 def collatz_orbit(n, maxlen=5000):
     orbit = [n]
