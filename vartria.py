@@ -1,6 +1,6 @@
 """
 Simple Example: Understanding Variance Between Trials
-For Prof. Vaienti - Demonstrating how variance is measured across multiple trials
+For Prof. V. - Demonstrating how variance is measured across multiple trials
 """
 
 import numpy as np
