@@ -1,9 +1,8 @@
-# Quantum Crisis Oracle - XPRIZE Quantum Applications
+# σc Framework Validation Suite
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![License: Elastic License 2.0](https://img.shields.io/badge/Commercial%20License-ELv2-orange)](LICENSE-COMMERCIAL.txt)
 
-# σc Framework Validation Suite
 
 This repository contains comprehensive validation tests for the σc (critical noise threshold) framework, addressing fundamental questions raised by Prof. Sandro Vaienti about the mathematical foundations and potential circularity of the method.
 
