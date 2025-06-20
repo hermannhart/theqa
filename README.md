@@ -8,7 +8,7 @@ This repository contains comprehensive validation tests for the σc (critical no
 
 ## Background
 
-The σc framework identifies critical noise thresholds in dynamical systems where behavior transitions from deterministic to stochastic. Prof. Vaienti raised several important concerns:
+The σc framework identifies critical noise thresholds in dynamical systems where behavior transitions from deterministic to stochastic. Prof. V. raised several important concerns:
 
 1. **Is the method circular?** Does it create the patterns it claims to detect?
 2. **What about different types of noise?** Observational (measurement) vs Dynamical (intrinsic)
@@ -25,7 +25,7 @@ The σc framework identifies critical noise thresholds in dynamical systems wher
 - **Result:** Clear transition at σc ≈ 0.234
 
 ### 2. `oN_vs_dn.py` 
-**Purpose:** Compare observational vs dynamical noise (Vaienti's key distinction)
+**Purpose:** Compare observational vs dynamical noise (V.'s key distinction)
 - Tests logistic, Hénon, and tent maps
 - Observational: noise added to measurements
 - Dynamical: noise affects the evolution
@@ -60,6 +60,9 @@ The σc framework identifies critical noise thresholds in dynamical systems wher
 - Part 2: PRNG quality detection capabilities  
 - Part 3: Different probability measures from ergodic theory
 - **Result:** Framework validated across all tests
+
+### 6 vartria.py                 
+**Purpose:** VARIANCE BETWEEN TRIALS
 
 ## Key Findings
 
@@ -103,6 +106,7 @@ python circle.py                  # Circularity tests
 python circle2.py                 # Methodological fixes
 python circle3.py                 # PRNG detection
 python circle4.py                 # Complete validation suite
+python vartria.py                 # VARIANCE BETWEEN TRIALS
 ```
 
 ## Requirements
