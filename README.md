@@ -4,7 +4,7 @@
 [![License: Elastic License 2.0](https://img.shields.io/badge/Commercial%20License-ELv2-orange)](LICENSE-COMMERCIAL.txt)
 
 
-This repository contains comprehensive validation tests for the σc (critical noise threshold) framework, addressing fundamental questions raised by Prof. Sandro Vaienti about the mathematical foundations and potential circularity of the method.
+This repository contains comprehensive validation tests for the σc (critical noise threshold) framework, addressing fundamental questions raised by Prof. V. about the mathematical foundations and potential circularity of the method.
 
 ## Background
 
