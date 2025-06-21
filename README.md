@@ -171,9 +171,6 @@ We welcome contributions in:
 - Real seismic data validation
 - UI/UX improvements
 
-**"The patterns that could save millions of lives have always been there - we just needed quantum eyes to see them."**
-
-
 ### **License**
 - This project follows a dual-license model:
 
