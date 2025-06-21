@@ -17,7 +17,7 @@ The σc framework identifies critical noise thresholds in dynamical systems wher
 
 ## Test Scripts Overview
 
-### 1. `simple_variance_example.py`
+### 1. `vartria.py `
 **Purpose:** Demonstrate variance calculation between trials with minimal data
 - Uses only 10 data points for clarity
 - Shows how variance is 0 without noise, >0 with noise
@@ -60,9 +60,6 @@ The σc framework identifies critical noise thresholds in dynamical systems wher
 - Part 2: PRNG quality detection capabilities  
 - Part 3: Different probability measures from ergodic theory
 - **Result:** Framework validated across all tests
-
-### 6 vartria.py                 
-**Purpose:** VARIANCE BETWEEN TRIALS
 
 ## Key Findings
 
