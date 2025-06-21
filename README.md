@@ -26,11 +26,15 @@ This repository demonstrates a framework for signal reconstruction in noisy dyna
 | Laplace | 0.0127 | Heavy-tailed |
 | Gaussian | 0.0207 | Most robust (baseline) |
 
+![Data1](beyond_lalley2_1.png)
+
 ### Reconstruction Performance
 - **Best achievable correlation**: 8-9% (all methods)
 - **Consistent MSE**: ≈0.099 (universal limit)
 - **Information preserved**: Limited but measurable
 - **Above σc**: Structural methods fail predictably
+
+![Data1](beyond_lalley2_2.png)
 
 ## 🔬 What This Means
 
