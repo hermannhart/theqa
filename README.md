@@ -97,13 +97,12 @@ The validation revealed the framework is actually three tools in one:
 Run individual scripts to see specific validations:
 
 ```bash
-python simple_variance_example.py  # Basic concept demonstration
+python vartria.py   # Basic concept demonstration
 python oN_vs_dn.py                # Noise type comparison
 python circle.py                  # Circularity tests
 python circle2.py                 # Methodological fixes
 python circle3.py                 # PRNG detection
 python circle4.py                 # Complete validation suite
-python vartria.py                 # VARIANCE BETWEEN TRIALS
 ```
 
 ## Requirements
