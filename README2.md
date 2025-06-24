@@ -99,7 +99,7 @@ This work represents a paradigm shift in number theory:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions!
 
 ### Areas for Extension
 - Application to Twin Prime Conjecture
