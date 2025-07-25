@@ -20,13 +20,6 @@ The **critical noise threshold** σ<sub>c</sub> is the minimal standard deviatio
 
 Let **S** = {s₁, s₂, ..., sₙ} be a deterministic sequence, **T** a transformation (e.g., log, sqrt, identity), and **F<sub>σ</sub>**(S) a feature extractor (e.g., peak count) applied to **T(S)** plus Gaussian noise of std. dev. σ.
 
-The **critical threshold** (for statistical criterion **C** and threshold ε) is:
-
-```math
-σ_c(S, T, F, C, ε) = inf{ σ > 0 : C[F_σ(T(S))] > ε }
-```
-
-Typical choice: C = variance, ε ≈ 0.1.
 
 ---
 
