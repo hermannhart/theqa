@@ -16,10 +16,6 @@ This repository explores the concept of **critical noise thresholds (σ<sub>c</s
 
 The **critical noise threshold** σ<sub>c</sub> is the minimal standard deviation of Gaussian noise at which a deterministic system, for a given transformation and feature extraction, transitions from deterministic to measurable statistical complexity according to a chosen statistical criterion.
 
-### Mathematical Definition
-
-Let **S** = {s₁, s₂, ..., sₙ} be a deterministic sequence, **T** a transformation (e.g., log, sqrt, identity), and **F<sub>σ</sub>**(S) a feature extractor (e.g., peak count) applied to **T(S)** plus Gaussian noise of std. dev. σ.
-
 
 ---
 
