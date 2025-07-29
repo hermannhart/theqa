@@ -230,4 +230,4 @@ VERMICULAR shows that practical quantum search is possible on current NISQ hardw
 - 🚀 Get started with TheQA and explore new frontiers in optimization! 🚀
 
 ---
-
+![Vermicular](https://github.com/hermannhart/theqa/blob/vermicular/_VERMICULAR.jpg)
