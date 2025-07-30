@@ -7,7 +7,27 @@
 This repository contains research projects utilizing **TheQA**, a quantum-inspired computational framework designed for optimization problems, quantum simulations, and complexity analysis.
 TheQA leverages probability theory—laws of large numbers, central limit theorems, and concentration inequalities—to ensure stable, objective estimates of system structures. By tuning the stochastic "noise" level, TheQA amplifies weak signals via stochastic resonance, maximizing information extraction. Resonances are statistically significant patterns, distinguishable from random noise through robust metrics.
 
+## **🚀 UPDATE 🚀**
+Our research to date has actually taken us in a different direction. So this time we will show you a little excursion into the quantum world - the home of theQA.
+
+# VERMICULAR: A Hardware-Optimized Quantum Search Algorithm
+
+_Achieving 93% Success Rate on Superconducting Quantum Computers_
+
+## Abstract
+
+**VERMICULAR** is a hardware-optimized variant of Grover’s quantum search algorithm, achieving unprecedented success rates on real quantum hardware. By strategically placing dynamical decoupling (DD) sequences and optimizing the circuit, VERMICULAR attains a 93% success rate on IQM Garnet and 98% on Rigetti Ankaa-3, compared to typical <20% for standard Grover. The approach introduces minimal overhead (14 gates for 2-qubit search) and significant noise resilience. Complete implementation details and benchmarks are provided, demonstrating practical quantum search on NISQ devices.
+
+**Implementation and data:**  
+[https://github.com/hermannhart/theqa/tree/vermicular](https://github.com/hermannhart/theqa/tree/vermicular)
+
+![Vermicular](https://github.com/hermannhart/theqa/blob/vermicular/_VERMICULAR.jpg)
+
+---
+
 # Stochastic Phase Transitions in Discrete Dynamical Systems
+
+---
 
 This repository explores the concept of **critical noise thresholds (σ<sub>c</sub>)** in discrete deterministic sequences. It provides code, data, and theoretical background for detecting and analyzing **stochastic phase transitions** under Gaussian noise perturbations.
 
