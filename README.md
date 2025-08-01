@@ -223,9 +223,9 @@ theQA-Quantum-Framework
 4. validation → "93% constant performance"
 
 **What makes it special:**
-**Predictive power:** Long-term behaviour can be predicted from just a few measurement points
-**Hardware agnostic:** The patterns are universal, but the parameters are hardware-specific
-**Optimization guide:** Shows exactly where and how to optimize
+- **Predictive power:** Long-term behaviour can be predicted from just a few measurement points
+- **Hardware agnostic:** The patterns are universal, but the parameters are hardware-specific
+- **Optimization guide:** Shows exactly where and how to optimize
 
 ---
 
