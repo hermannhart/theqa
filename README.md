@@ -211,6 +211,24 @@ VERMICULAR demonstrates that practical quantum search is achievable on current N
 Implementation: https://github.com/hermannhart/theqa/tree/vermicular
 Preprint: Available on preprints.org for reproducibility and validation
 
+---
+
+## What does theQA have to do with vermicular?
+theQA develops metrics to characterize quantum algorithms. Imagine you want to measure the "health" of a quantum algorithm - not just whether it works, but how robust it is under different conditions.
+
+theQA-Quantum-Framework
+1. analysis  → “Grover degrades at depth 2-4”
+2. identification → “Temporal decoherence dominates”
+3. targeted solution → “DD at positions X,Y”
+4. validation → "93% constant performance"
+
+**What makes it special:**
+**Predictive power:** Long-term behaviour can be predicted from just a few measurement points
+**Hardware agnostic:** The patterns are universal, but the parameters are hardware-specific
+**Optimization guide:** Shows exactly where and how to optimize
+
+---
+
 **Implementation and data:**  
 [https://github.com/hermannhart/theqa/tree/vermicular](https://github.com/hermannhart/theqa/tree/vermicular)
 
