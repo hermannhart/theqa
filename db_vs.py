@@ -10,6 +10,19 @@ The Challenge: Find 3 password fragments in a quantum database
 
 Author: Matthias and Arti Cyan from theQA
 Date: January 2025
+This software is licensed under a dual-license model:
+
+1. **For Non-Commercial and Personal Use**  
+   - This software is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.  
+   - Home users and researchers may use, modify, and share this software **for non-commercial purposes only**.  
+   - See `LICENSE-CCBYNC.txt` for full details.
+
+2. **For Commercial Use**  
+   - Companies, organizations, and any commercial entities must acquire a **commercial license**.  
+   - This commercial license follows the **Elastic License 2.0 (ELv2)** model.  
+   - See `LICENSE-COMMERCIAL.txt` for details on permitted commercial usage and restrictions.
+
+By using this software, you agree to these terms. If you are a company or organization, please contact **[www.theqa.space]** for licensing inquiries.
 """
 
 import numpy as np
@@ -436,3 +449,4 @@ def main():
 if __name__ == "__main__":
 
    main()
+
