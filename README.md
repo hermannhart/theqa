@@ -159,14 +159,17 @@ success_rate = counts.get(3, 0) / 1000  # Should be ~0.93
 
 ## Multi-Stage Search Performance (db_vs.py)
 We evaluated VERMICULAR's performance for sequential quantum searches using Rigetti Ankaa-3 hardware. The test involved finding three 2-bit targets in sequence, simulating realistic multi-stage database search scenarios.
+
 **Key Findings:**
 - Stage 1: Both algorithms performed similarly (~93% success rate)
 - Stage 2: VERMICULAR maintained 84.5% vs. standard Grover's 21.0% (4× improvement)
 - Stage 3: VERMICULAR achieved 88.5% vs. standard Grover's 28.5% (3.1× improvement)
+
 **Overall System Performance:**
 - Standard Grover: 5.6% total success rate (all three stages)
 - VERMICULAR: 69.2% total success rate
 - Net improvement: 12.4× reliability
+
 **Performance Degradation Pattern:**
 Standard Grover shows significant performance degradation in later stages, likely due to accumulated noise and increased circuit depth. VERMICULAR maintains consistent 84-92% success rates across all stages.
 
