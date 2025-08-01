@@ -174,14 +174,17 @@ Standard Grover shows significant performance degradation in later stages, likel
 ---
 
 ## Technical Analysis
+
 **Noise Resilience**
 - Coherent errors: Reduced through XX sequence timing
 - Slow drift: Hardware recalibration during DD delays
 - Crosstalk: Minimized impact through strategic gate placement
+
 **Why VERMICULAR Works**
 - Timing optimization: DD sequences provide calibrated delays
 - Error refocusing: Strategic placement at vulnerable circuit points
 - Minimal overhead: Only 4 additional gates for substantial improvement
+
 **Limitations**
 - Currently optimized for 2-qubit systems
 - DD effectiveness depends on hardware characteristics
