@@ -157,34 +157,38 @@ success_rate = counts.get(3, 0) / 1000  # Should be ~0.93
 
 ---
 
-## Noise Resilience Analysis
+## Multi-Stage Search Performance (db_vs.py)
+We evaluated VERMICULAR's performance for sequential quantum searches using Rigetti Ankaa-3 hardware. The test involved finding three 2-bit targets in sequence, simulating realistic multi-stage database search scenarios.
+**Key Findings:**
+- Stage 1: Both algorithms performed similarly (~93% success rate)
+- Stage 2: VERMICULAR maintained 84.5% vs. standard Grover's 21.0% (4× improvement)
+- Stage 3: VERMICULAR achieved 88.5% vs. standard Grover's 28.5% (3.1× improvement)
+**Overall System Performance:**
+- Standard Grover: 5.6% total success rate (all three stages)
+- VERMICULAR: 69.2% total success rate
+- Net improvement: 12.4× reliability
+**Performance Degradation Pattern:**
+Standard Grover shows significant performance degradation in later stages, likely due to accumulated noise and increased circuit depth. VERMICULAR maintains consistent 84-92% success rates across all stages.
 
-- **Coherent errors:** Cancelled by XX sequences
-- **Slow drift:** Refocused between oracle and diffusion
-- **Crosstalk:** Reduced impact due to shorter evolution time
-
+![grover_vs_vermicular](https://github.com/hermannhart/theqa/blob/vermicular/vermicular_demo_rigetti_20250801_231052.png)
 ---
 
-## Discussion
-
-### Why does VERMICULAR work?
-
-1. **Error refocusing:** DD sequences cancel systematic errors.
-2. **Optimal timing:** DD at points of maximal vulnerability.
-3. **Minimal overhead:** Only 4 extra gates for dramatic robustness gain.
-
-### Limitations
-VERMICULAR shows significant advantages for deep quantum circuits 
-(>50 gates) where temporal decoherence dominates. For shallow 
-circuits on well-calibrated modern QPUs, the improvement is marginal.
-
-Our testing methodology involved repeated circuit blocks to simulate 
-realistic algorithm depths. Under these conditions, VERMICULAR achieved 
-98% success rate compared to 20% baseline.
-
+## Technical Analysis
+**Noise Resilience**
+- Coherent errors: Reduced through XX sequence timing
+- Slow drift: Hardware recalibration during DD delays
+- Crosstalk: Minimized impact through strategic gate placement
+**Why VERMICULAR Works**
+- Timing optimization: DD sequences provide calibrated delays
+- Error refocusing: Strategic placement at vulnerable circuit points
+- Minimal overhead: Only 4 additional gates for substantial improvement
+**Limitations**
 - Currently optimized for 2-qubit systems
-- DD effectiveness is hardware-dependent
-- Gate times must be much shorter than $T_2$
+- DD effectiveness depends on hardware characteristics
+- Requires gate times much shorter than $T_2$ (satisfied by current hardware)
+- Performance benefits most pronounced for deep circuits (>20 gates)
+
+---
 
 ### Future Work
 
@@ -197,7 +201,9 @@ realistic algorithm depths. Under these conditions, VERMICULAR achieved
 
 ## Conclusion
 
-VERMICULAR shows that practical quantum search is possible on current NISQ hardware through careful circuit design. With 93–98% success on real QPUs, it bridges theoretical quantum advantage and practical deployment.
+VERMICULAR demonstrates that practical quantum search is achievable on current NISQ devices through careful circuit optimization. With 93-98% success rates on real hardware and 12× improvement for multi-stage operations, it bridges the gap between theoretical quantum advantage and practical implementation.
+Implementation: https://github.com/hermannhart/theqa/tree/vermicular
+Preprint: Available on preprints.org for reproducibility and validation
 
 **Implementation and data:**  
 [https://github.com/hermannhart/theqa/tree/vermicular](https://github.com/hermannhart/theqa/tree/vermicular)
@@ -232,9 +238,11 @@ VERMICULAR shows that practical quantum search is possible on current NISQ hardw
 
 ### ***Contact & Support***
 
-- For inquiries regarding commercial licensing or support, please contact:📧 theqa@posteo.com 🌐 www.theqa.space 🚀🚀🚀
+For inquiries regarding commercial licensing or technical support:
+📧 theqa@posteo.com
+🌐 www.theqa.space
 
 - 🚀 Get started with TheQA and explore new frontiers in optimization! 🚀
 
 ---
-![Vermicular](https://github.com/hermannhart/theqa/blob/vermicular/_VERMICULAR.jpg)
+![Vermicular](https://github.com/hermannhart/theqa/blob/vermicular/vermicular.jpg)
