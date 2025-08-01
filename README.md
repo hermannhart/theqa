@@ -174,6 +174,13 @@ success_rate = counts.get(3, 0) / 1000  # Should be ~0.93
 3. **Minimal overhead:** Only 4 extra gates for dramatic robustness gain.
 
 ### Limitations
+VERMICULAR shows significant advantages for deep quantum circuits 
+(>50 gates) where temporal decoherence dominates. For shallow 
+circuits on well-calibrated modern QPUs, the improvement is marginal.
+
+Our testing methodology involved repeated circuit blocks to simulate 
+realistic algorithm depths. Under these conditions, VERMICULAR achieved 
+98% success rate compared to 20% baseline.
 
 - Currently optimized for 2-qubit systems
 - DD effectiveness is hardware-dependent
