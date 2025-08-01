@@ -1,0 +1,38 @@
+{
+  "platform": "rigetti",
+  "device": "Rigetti Ankaa-3",
+  "timestamp": "20250801_231103",
+  "targets": [
+    [
+      "Alpha",
+      "00"
+    ],
+    [
+      "Beta",
+      "11"
+    ],
+    [
+      "Gamma",
+      "10"
+    ]
+  ],
+  "results": {
+    "standard": {
+      "stages": [
+        0.935,
+        0.21,
+        0.285
+      ],
+      "total": 0.055959749999999996
+    },
+    "vermicular": {
+      "stages": [
+        0.925,
+        0.845,
+        0.885
+      ],
+      "total": 0.691738125
+    }
+  },
+  "improvement_factor": 12.361351239060218
+}
