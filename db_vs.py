@@ -8,7 +8,7 @@ The Challenge: Find 3 password fragments in a quantum database
 - Standard Grover: Performance degrades unpredictably with depth
 - VERMICULAR: Maintains consistent 93%+ success rate
 
-Author: Quantum Database Search Lab
+Author: Matthias and Arti Cyan from theQA
 Date: January 2025
 """
 
@@ -434,4 +434,5 @@ def main():
 
 
 if __name__ == "__main__":
+
    main()
