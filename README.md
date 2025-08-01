@@ -11,7 +11,16 @@ _Achieving 93% Success Rate on Superconducting Quantum Computers_
 
 ## Abstract
 
-**VERMICULAR** is a hardware-optimized variant of Grover’s quantum search algorithm, achieving unprecedented success rates on real quantum hardware. By strategically placing dynamical decoupling (DD) sequences and optimizing the circuit, VERMICULAR attains a 93% success rate on IQM Garnet and 98% on Rigetti Ankaa-3, compared to typical <20% for standard Grover. The approach introduces minimal overhead (14 gates for 2-qubit search) and significant noise resilience. Complete implementation details and benchmarks are provided, demonstrating practical quantum search on NISQ devices.
+**VERMICULAR** is a hardware-optimized variant of Grover's quantum search algorithm that tackles a common challenge in quantum computing: the performance gap between simulation and real hardware. Standard implementations often achieve 15-25% success rates on current QPUs, which can limit practical applications.
+Through strategic placement of dynamical decoupling (DD) sequences and circuit optimization, VERMICULAR demonstrates improved success rates: 93% on IQM Garnet and 98% on Rigetti Ankaa-3. This improvement may help enable:
+
+- More reliable quantum operations: Better consistency across different hardware platforms
+- Efficient resource usage: Improved success rates can reduce the number of required runs
+- Complex quantum workflows: Multi-stage operations show enhanced stability
+- Practical algorithm deployment: Performance suitable for real-world testing
+
+The approach adds modest overhead (20 gates for 2-qubit search) while providing noise resilience on NISQ devices. The results suggest that algorithm-level optimizations can complement hardware improvements in making quantum computing more practical.
+Complete implementation details and experimental data are provided to support reproducibility and further development of the approach.
 
 ---
 
