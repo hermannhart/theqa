@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "timestamp": "2025-08-06T01:46:31.917703",
+    "n_sequences": 110,
+    "n_valid": 108,
+    "sequence_types": [
+      "Fibonacci",
+      "Collatz",
+      "Primes",
+      "Logistic",
+      "Henon",
+      "CA",
+      "Normal",
+      "Uniform",
+      "Exponential",
+      "Poisson",
+      "Squares",
+      "Cubes",
+      "Triangular",
+      "Pentagonal",
+      "Catalan",
+      "Factorial",
+      "Lucas",
+      "Pell",
+      "Tribonacci",
+      "Padovan"
+    ]
+  },
+  "summary": {
+    "method_consistency_cv": 0.2760863200757062,
+    "mean_scaling_cv": 0.3936897695429914,
+    "median_scaling_cv": 0.3762516523565138,
+    "best_normalization": "range"
+  },
+  "significance_tests": {
+    "structured_vs_random": {
+      "test": "Mann-Whitney U",
+      "statistic": 715.0,
+      "p_value": 0.01733743876684737,
+      "significant": true
+    },
+    "anova_sequence_types": {
+      "test": "One-way ANOVA",
+      "f_statistic": 49.758055872043066,
+      "p_value": 1.1008892621445958e-15,
+      "significant": true
+    },
+    "effect_size": {
+      "cohens_d": 0.20392499592401483,
+      "interpretation": "small"
+    }
+  },
+  "recommendations": [
+    "Method shows acceptable consistency (CV < 0.3)",
+    "Scaling invariance needs improvement (CV = 0.394)",
+    "\u03c3c significantly distinguishes structured from random sequences"
+  ]
+}
